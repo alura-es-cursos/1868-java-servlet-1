@@ -38,7 +38,7 @@ public class NuevaEmpresaServlet extends HttpServlet {
 		baseDeDatos.agregarEmpresa(empresa);
 		
 		//llamar al jsp
-		RequestDispatcher rd = request.getRequestDispatcher("/nuevaEmpresaRegistrada.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/listaEmpresas");
 		request.setAttribute("empresa", empresa.getNombre());
 		rd.forward(request, response);
 	}
