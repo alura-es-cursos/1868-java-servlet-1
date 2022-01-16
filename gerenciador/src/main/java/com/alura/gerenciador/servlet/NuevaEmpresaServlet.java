@@ -1,6 +1,5 @@
 package com.alura.gerenciador.servlet;
 
-import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -36,6 +35,8 @@ public class NuevaEmpresaServlet extends HttpServlet {
 		
 		DB baseDeDatos = new DB();
 		baseDeDatos.agregarEmpresa(empresa);
+		
+		request.setAttribute("empresa", empresa.getNombre());
 		
 		response.sendRedirect("listaEmpresas");
 		

@@ -29,4 +29,14 @@
     <servlet-name>ListaEmpresasServlet</servlet-name>
     <url-pattern>/listaEmpresas</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EliminarEmpresaServlet</display-name>
+    <servlet-name>EliminarEmpresaServlet</servlet-name>
+    <servlet-class>com.alura.gerenciador.servlet.EliminarEmpresaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EliminarEmpresaServlet</servlet-name>
+    <url-pattern>/eliminarEmpresa</url-pattern>
+  </servlet-mapping>
 </web-app>
