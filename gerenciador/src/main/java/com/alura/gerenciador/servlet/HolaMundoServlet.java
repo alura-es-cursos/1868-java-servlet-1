@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 //hola
-@WebServlet(urlPatterns = "/hola")
+//@WebServlet(urlPatterns = "/hola")
 public class HolaMundoServlet extends HttpServlet{
 	
 	private static final long serialVersionUID = 1L;
